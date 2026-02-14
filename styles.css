@@ -1,0 +1,236 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+/* Version View Plugin Styles */
+
+/* Version View Sidebar */
+.version-view-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.version-view-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.version-view-empty {
+  padding: 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.version-view-save {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.version-save-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.version-save-input {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.version-save-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.version-save-input input {
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.version-view-list {
+  padding: 12px 16px;
+}
+
+.version-view-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-bottom: 12px;
+}
+
+.version-view-versions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Version Item */
+.version-item {
+  padding: 12px;
+  border-radius: 4px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.version-item-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.version-item-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.version-item-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.version-item-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-normal);
+}
+
+.version-item-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.version-item-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.version-item-actions .clickable-icon {
+  padding: 4px;
+}
+
+/* Diff Modal */
+.version-diff-modal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.version-diff-container {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.version-diff-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.version-diff-pane:first-child {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.version-diff-pane-header {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.version-diff-pane-content {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Diff Highlighting */
+.version-diff-insert {
+  background-color: rgba(0, 200, 0, 0.25);
+  color: var(--text-normal);
+  text-decoration: none;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+.version-diff-delete {
+  background-color: rgba(255, 50, 50, 0.25);
+  color: var(--text-normal);
+  text-decoration: line-through;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+.version-diff-equal {
+  color: var(--text-normal);
+}
+
+/* Insert and Delete for diff view modal */
+ins.version-diff-insert {
+  background-color: rgba(0, 200, 0, 0.25);
+  color: var(--text-normal);
+  text-decoration: none;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+del.version-diff-delete {
+  background-color: rgba(255, 50, 50, 0.25);
+  color: var(--text-normal);
+  text-decoration: line-through;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+/* Frontmatter 样式 - 减小行间距 */
+.version-diff-frontmatter {
+  display: block;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Edit Version Modal */
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--background-modifier-border);
+}

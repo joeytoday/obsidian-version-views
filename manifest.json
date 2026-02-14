@@ -1,0 +1,11 @@
+{
+	"id": "version-view",
+	"name": "Version View",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "保存、管理和查看文件的不同版本，支持版本对比和恢复",
+	"author": "joeytoday",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}
