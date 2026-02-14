@@ -22,6 +22,10 @@ class VersionViewLeaf extends View {
 		return '版本视图';
 	}
 
+	getIcon() {
+		return 'history';
+	}
+
 	async onOpen() {
 		this.versionView = new VersionView(this.app, this.containerEl, this.plugin.settings);
 		// 注册文件切换事件，当用户切换文件时刷新版本视图
